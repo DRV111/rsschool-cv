@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+h3 {
+  font-size: 3rem;
+  font-family: 'Smooch Sans', sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  /* 1rem = 10px */
+}
+
+body {
+  font-family: sans-serif;
+  background: rgb(168, 182, 182);
+  background: linear-gradient(
+    222deg,
+    rgba(168, 182, 182, 1) 7%,
+    rgba(226, 226, 226, 1) 100%
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 95vh;
+}
+
+.container {
+  max-width: 130rem;
+  margin: 8rem auto;
+  background-color: #fff;
+  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  min-height: 50rem;
+}
+.container__wrapper {
+  display: flex;
+}
+
+.profile {
+  background-color: #606060;
+  flex: 0 0 30%;
+  text-align: center;
+}
+.profile__photo {
+  margin: 2rem;
+}
+.profile__photo-img {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+}
+.profile__name {
+  font-family: 'Smooch Sans', sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  color: #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+  margin: 2rem;
+}
+.profile__about-title {
+  font-family: 'Smooch Sans', sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  color: #f0f0f0;
+  border-bottom: 2px solid #c0c0c0;
+  margin: 2rem 2rem;
+}
+
+.profile__about-text {
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 1.8rem;
+  color: #f0f0f0;
+  margin: 1rem 2rem 2rem;
+}
+
+.profile__contacts-title {
+  font-family: 'Smooch Sans', sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  color: #f0f0f0;
+  border-bottom: 2px solid #c0c0c0;
+  margin: 2 2rem;
+}
+.profile__contacts-content {
+  margin-bottom: 4rem;
+}
+.profile__contacts-content--list {
+  list-style-type: none;
+  margin-top: 2rem;
+}
+.profile__contacts-content li {
+  font-family: 'Nanum Gothic', sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #f0f0f0;
+  margin-bottom: 1rem;
+}
+.profile__contacts-content--item {
+  display: inline-block;
+}
+.profile__contacts-link {
+  color: #f0f0f0;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+.information {
+  background-color: #f5f5f5;
+  flex: 1;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: min-content, min-content;
+  padding: 3.5rem;
+  gap: 1.5rem;
+}
+
+.info__skills {
+  background-color: #fff;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+  padding: 3rem;
+}
+.info__sub {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+  border-bottom: 2px solid #000;
+}
+.info__skills-icon {
+  width: 3rem;
+  height: 3rem;
+  margin-right: 0.5rem;
+}
+
+.info__skills ul {
+  list-style-type: disc;
+  margin-top: 1rem;
+}
+
+.info__skills li {
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.info__courses {
+  background-color: #fff;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+  padding: 3rem;
+}
+.info__courses-icon {
+  width: 3rem;
+  height: 3rem;
+  margin-right: 0.5rem;
+}
+
+.info__courses ul {
+  list-style-type: disc;
+  margin-top: 1rem;
+}
+
+.info__courses li {
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.info__languages {
+  background-color: #fff;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+  padding: 3rem;
+  /* flex: 0 0 80%; */
+}
+.info__languages-icon {
+  width: 3rem;
+  height: 3rem;
+  margin-right: 0.5rem;
+}
+
+.info__languages ul {
+  list-style-type: disc;
+  margin-top: 1rem;
+}
+
+.info__languages li {
+  font-family: 'Nanum Gothic', sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.info__code {
+  background-color: #fff;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+  padding: 3rem;
+  grid-column: 1 / span 3;
+}
+.info__code-icon {
+  width: 3rem;
+  height: 3rem;
+  margin-right: 0.5rem;
+}
+
+.info__code p {
+  font-size: 1.6rem;
+  margin: 1rem 2rem 2rem;
+}
+.info__code pre {
+  margin-left: -11rem;
+}
+.info__code code {
+  font-family: 'Anonymous Pro', monospace;
+  font-size: 1.8rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 4rem;
+  background-color: #434343;
+}
+
+.footer__icon {
+  height: 8rem;
+  width: 8rem;
+}
+.footer p {
+  font-size: 2rem;
+  color: #fff;
+  font-family: 'Smooch Sans', sans-serif;
+}

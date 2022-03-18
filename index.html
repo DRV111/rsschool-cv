@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Nanum+Gothic&family=Smooch+Sans:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>My RS School CV</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container__wrapper">
+        <div class="profile">
+          <div class="profile__photo">
+            <img
+              class="profile__photo-img"
+              src="img/Profile.jpg"
+              alt="Profile photo"
+            />
+          </div>
+
+          <div class="profile__name">
+            <h1>Roman Dmitriev</h1>
+          </div>
+          <div class="profile__about-title">
+            <h2>About Me</h2>
+          </div>
+          <div class="profile__about-content">
+            <p class="profile__about-text">
+              ...One day I just have realized that I need some changes. And here
+              I am! Ready to learn something new. Ready for new beginnings!
+            </p>
+          </div>
+          <div class="profile__contacts">
+            <div class="profile__contacts-title">
+              <h2>My Contacts And Other Links:</h2>
+            </div>
+            <div class="profile__contacts-content">
+              <ul class="profile__contacts-content--list">
+                <li class="profile__contacts-content--item">
+                  <a class="profile__contacts-link" href="#"
+                    ><img src="img/SVG/gmail.svg" alt="Gmail"
+                  /></a>
+                </li>
+                <li class="profile__contacts-content--item">
+                  <a class="profile__contacts-link" href="#"
+                    ><img src="img/SVG/discord.svg" alt="Discord"
+                  /></a>
+                </li>
+                <li class="profile__contacts-content--item">
+                  <a class="profile__contacts-link" href="#"
+                    ><img src="img/SVG/github.svg" alt="Github"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="information">
+          <section class="info">
+            <div class="info__skills">
+              <div class="info__sub">
+                <img
+                  src="img/SVG/award.svg"
+                  alt="skills"
+                  class="info__skills-icon"
+                />
+                <h3>My Skills:</h3>
+              </div>
+              <ul>
+                <li>HTML/CSS/SASS/SCSS</li>
+                <li>BEM</li>
+                <li>JavaScript (basics)</li>
+                <li>VS Code</li>
+                <li>Figma</li>
+                <li>Photoshop</li>
+              </ul>
+            </div>
+            <div class="info__courses">
+              <div class="info__sub">
+                <img
+                  src="img/SVG/book.svg"
+                  alt="courses"
+                  class="info__courses-icon"
+                />
+                <h3>Courses:</h3>
+              </div>
+
+              <ul>
+                <li>
+                  “Advanced CSS and Sass: Flexbox, Grid, Animations and More!”.
+                  Author: Jonas Schmedtmann
+                </li>
+                <li>
+                  “The Complete JavaScript Course: From Zero to Expert!”.
+                  Author: Jonas Schmedtmann
+                </li>
+                <li>RS School Frontend Web Developer: stage 1 (in progress)</li>
+              </ul>
+            </div>
+            <div class="info__languages">
+              <div class="info__sub">
+                <img
+                  src="img/SVG/globe.svg"
+                  alt="languages"
+                  class="info__languages-icon"
+                />
+                <h3>Languages:</h3>
+              </div>
+
+              <ul>
+                <li>Russian: Native</li>
+                <li>English: B1</li>
+              </ul>
+            </div>
+            <div class="info__code">
+              <div class="info__sub">
+                <img
+                  src="img/SVG/code.svg"
+                  alt="code"
+                  class="info__code-icon"
+                />
+                <h3>Code Example:</h3>
+              </div>
+
+              <p>
+                "Make a program that filters a list of strings and returns a
+                list with only your friends name in it. If a name has exactly 4
+                letters in it, you can be sure that it has to be a friend of
+                yours! Otherwise, you can be sure he's not... Ex: Input =
+                ["Ryan", "Kieran", "Jason", "Yous"], Output = ["Ryan", "Yous"]
+                i.e. friend ["Ryan", "Kieran", "Mark"] `shouldBe` ["Ryan",
+                "Mark"] Note: keep the original order of the names in the
+                output."
+              </p>
+              <pre>
+                <code>
+                function friend(friends) { 
+                  return friends.filter((mate) => mate.length === 4);
+                }
+                friend(['Ryan', 'Kieran', 'Mark']);
+                </code>
+              </pre>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <p>© 2022</p>
+        <a href="https://rs.school/"
+          ><img class="footer__icon" src="img/SVG/logo-rs.svg" alt="RS School"
+        /></a>
+      </footer>
+    </div>
+  </body>
+</html>
