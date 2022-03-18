@@ -1,4 +1,4 @@
-## My RS Scool CV
+## My RS School CV
 
 # Roman Dmitriev
 
@@ -11,7 +11,7 @@
 
 ### About Me:
 
-#### Nothing more to say. I'm about to change my life.
+#### ...One day I just have realized that I need some changes. And here I am! Ready to learn something new. Ready for new beginnings!
 
 ### Skills:
 
